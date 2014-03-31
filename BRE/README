@@ -1,0 +1,21 @@
+Code for Binary Reconstructive Hashing
+======================================
+
+You are free to use this code; please acknowledge with a citation:
+
+Brian Kulis and Trevor Darrell
+"Learning to Hash with Binary Reconstructive Hashing"
+Advances in Neural Information Processing Systems (NIPS), 2009.
+
+This demo code constructs hash functions for the labelme data. Simply type:
+
+hashing_comparison_script
+
+in Matlab.
+
+The script runs LSH and BRE while varying the number of bits over the example data set, then displays a plot similar to the one displayed in the NIPS paper (without the extra  hashing methods, which are not included in this package).  The evaluation is done using linear scans in the Hamming space; for sublinear-time queries, one would need to integrate this code with other data structures for performing fast searches.
+
+Please let me know if you find any bugs in the code.  I may not be able to assist with usage questions.
+
+Good luck!
+Brian Kulis
