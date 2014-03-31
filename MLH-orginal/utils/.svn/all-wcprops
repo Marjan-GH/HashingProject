@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils
+END
+eval_linear_hash.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils/eval_linear_hash.m
+END
+compactbit.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/min-loss-hashing/!svn/ver/13/trunk/utils/compactbit.m
+END
+distMat.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/min-loss-hashing/!svn/ver/31/trunk/utils/distMat.m
+END
+do_pca.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/min-loss-hashing/!svn/ver/31/trunk/utils/do_pca.m
+END
+hammDist_mex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils/hammDist_mex.cpp
+END
+hammDist.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils/hammDist.m
+END
+accumarray_reverse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils/accumarray_reverse.cpp
+END
+eval_labelme.m
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils/eval_labelme.m
+END
+evaluation2.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/min-loss-hashing/!svn/ver/35/trunk/utils/evaluation2.m
+END
+evaluation3.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/min-loss-hashing/!svn/ver/48/trunk/utils/evaluation3.m
+END
+bitops.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/min-loss-hashing/!svn/ver/43/trunk/utils/bitops.h
+END
+eval_LSH.m
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/min-loss-hashing/!svn/ver/31/trunk/utils/eval_LSH.m
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/min-loss-hashing/!svn/ver/41/trunk/utils/types.h
+END
+neighbors_recall.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/min-loss-hashing/!svn/ver/27/trunk/utils/neighbors_recall.m
+END

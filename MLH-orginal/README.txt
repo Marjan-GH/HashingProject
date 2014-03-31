@@ -1,0 +1,109 @@
+~~~~~~~~~~~~~ About
+
+This is an implementation of the algorithm presented in the paper
+"Minimal Loss Hashing for Compact Binary Codes, Mohammad Norouzi,
+David J Fleet, ICML 2011", with slight modifications. The goal is to
+learn similarity preserving hash functions that map high-dimensional
+data onto binary codes. Using this package, one can re-run the
+experiments described in the paper on Euclidean and semantic 22K
+LabelMe, and on 6 other datasets (10D uniform, mnist, LabelMe,
+notredame, peekaboom, nursery).
+
+
+~~~~~~~~~~~~~ Data
+
+You should download the dataset files separately:
+
+- LabelMe_gist.mat is the 22K LabelMe dataset available from
+http://cs.nyu.edu/~fergus/research/tfw_cvpr08_code.zip, (within archive),
+or http://www.cs.toronto.edu/~norouzi/research/mlh/data/LabelMe_gist.mat,
+courtesy of Rob Fergus. Store the file under data/ folder.
+
+- *.mtx files for 5 small datasets (MNIST, LabelMe, Peekaboom,
+Photo-Tourism, Nursery) can be downloaded from
+http://www.cs.toronto.edu/~norouzi/research/mlh/data/5_datasets.tar,
+courtesy of Brian Kulis. Untar the archive file under data/kulis/
+directory.
+
+
+~~~~~~~~~~~~~ Usage
+
+Run compile (compile.m) to compile all of the required mex files. If
+you cannot compile mex, see below.
+
+RUN.m is the starting point. It includes the code for running
+experiments on different datasets appeared in our paper. It will also
+produce performance plots.
+
+You can set the environment variable OMP_NUM_THREADS to control the
+maximum number of cores used by loss_adj_inf_mex. When other programs
+are running, often setting OMP_NUM_THREADS by hand makes the program
+run faster, because by default loss_adj_inf_mex tries to take up all
+of the cores, and this produces a wasteful competition between
+different processes.
+
+
+~~~~~~~~~~~~~ Alternative to mex compilation
+
+If you are unable to compile loss_adj_inf_mex, you can change
+learnMLH.m by uncommenting the matlab code for loss adjusted
+inference, and commenting the call to loss_adj_inf_mex.
+
+If you are unable to compile utils/hammDist_mex.cpp, please change
+eval_linear_hash.m and eval_labelme.m to use hammDist.m (a slower
+matlab implementation).
+
+If you are unable to compile this utils/accumarray_reverse.cpp, you
+can replace evaluation3 with evalution2 (slower and less memory
+efficient) in utils/eval_linear_hash.m
+
+
+~~~~~~~~~~~~~ List of files
+
+data/ folder will contain dataset files.
+
+learnMLH.m: the main file for learning hash functions. It performs
+stochastic gradient descent to learn the hash parameters.
+
+MLH.m: performs validation on sets of parameters by calling
+appropriate instances of learnMLH function.
+
+create_data: a function that creates dataset structures from different
+sources of data based on its input parameters.
+
+create_training: performs train/validation/test splits
+
+utils/ folder includes small functions that are used throughout the
+code. Some of the functions are adapted from Spectral Hashing (SH)
+source code generously provided by Y. Weiss, A. Torralba, R. Fergus.
+
+plots/ folder contains some functions useful for plotting the curves
+used in the paper.
+
+res/ folder will store the result files. Pre-trained parameter
+matrices and binary codes for semantic 22K LabelMe are already there.
+
+...
+
+
+~~~~~~~~~~~~~ Notes
+
+This implementation is slightly different from the algorithm presented
+in the MLH ICML'11 paper. Main modifications include 1) an L2
+regularizer on W matrix is used instead of fixing the norm of W. Thus
+instead of tuning epsilon parameter which gets multiplied by the loss
+function, we tune a regularizer parameter and do not change loss. 2)
+For balancing precision and recall, instead of formulating a parameter
+lambda inside the hinge loss, we re-define lambda as the ratio of
+positive and negative pairs to be sampled during training. We usually
+use lambda=.5 meaning equal sampling of positive and negative
+pairs. For one of the experiments we set lambda=0 meaning the original
+distribution of positive and negative pairs.
+
+
+~~~~~~~~~~~~~ License
+
+Minimal loss hashing for learning similarity preserving binary hash
+functions. Copyright (c) 2011, Mohammad Norouzi <mohammad.n@gmail.com>
+and David Fleet <fleet@cs.toronto.edu>. This is a free software; for
+license information please refer to license.txt file.

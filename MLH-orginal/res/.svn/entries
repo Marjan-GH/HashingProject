@@ -1,0 +1,54 @@
+8
+
+dir
+55
+https://subversion.assembla.com/svn/min-loss-hashing/trunk/res
+https://subversion.assembla.com/svn/min-loss-hashing
+
+
+
+2011-05-19T19:45:23.529897Z
+4
+mnorouzi
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+43aa559e-c8eb-47bc-a830-0eeea0e4f537
+
+mlh_W_sem-22K-labelme.mat
+file
+
+
+
+
+2012-08-10T18:29:44.000000Z
+02464e9f4ff2c163bf27e9ba35128aeb
+2011-05-19T19:45:23.529897Z
+4
+mnorouzi
+has-props
+
+mlh_codes_sem-22K-labelme.mat
+file
+
+
+
+
+2012-08-10T18:29:44.000000Z
+6f1196ee27e210e6ebcd3175e15e84fe
+2011-05-19T19:45:23.529897Z
+4
+mnorouzi
+has-props
+

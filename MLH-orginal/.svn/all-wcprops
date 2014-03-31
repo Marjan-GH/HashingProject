@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/min-loss-hashing/!svn/ver/55/trunk
+END
+RUN.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/min-loss-hashing/!svn/ver/46/trunk/RUN.m
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/min-loss-hashing/!svn/ver/34/trunk/license.txt
+END
+compile.m
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/min-loss-hashing/!svn/ver/55/trunk/compile.m
+END
+loss_adj_inf_mex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/min-loss-hashing/!svn/ver/51/trunk/loss_adj_inf_mex.cpp
+END
+create_data.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/min-loss-hashing/!svn/ver/35/trunk/create_data.m
+END
+create_training.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/min-loss-hashing/!svn/ver/35/trunk/create_training.m
+END
+MLH.m
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/min-loss-hashing/!svn/ver/35/trunk/MLH.m
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/min-loss-hashing/!svn/ver/55/trunk/README.txt
+END
+learnMLH.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/min-loss-hashing/!svn/ver/51/trunk/learnMLH.m
+END

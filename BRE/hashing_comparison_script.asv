@@ -17,9 +17,8 @@ testN = 3000;
 %numbits = [10 15 20 25 30 35 40 45 50];
 numbits = [10 15 20 25 30];
 
-%X = load('C:\Users\Marjan\Dropbox\Time Series Data\processed-by-dave\wafer-downsampled.mat');
-X=load('labelme.mtx');
-testN = min(testN,size(X,1)-trN);
+X = load('labelme.mtx');
+testN = min(3000,size(X,1)-1000);
 
 %center, then normalize data
 X = X - ones(size(X,1),1)*mean(X);
@@ -44,7 +43,7 @@ for nb = numbits
     i = i + 1;
     
     %do PCA on the data first
-    
+    %Marjan, we can not do this
     npca = min(nb, size(Xtr,2));
     opts.disp = 0;
     [pc, l] = eigs(cov(Xtr),npca,'LM',opts);
