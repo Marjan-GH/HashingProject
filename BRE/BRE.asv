@@ -15,7 +15,7 @@ Dist = Dist / max(max(Dist));
 %e.g., 50 random points are chosen per training pt if n=1000
 for i = 1:n
     rp = randperm(n);
-    nns{i} = rp(1:(floor(.05*n)))';
+    nns{i} = rp(1:(.05*n))';
     %remove any (i,i) pairs
     nns{i} = setdiff(nns{i},i);
 end

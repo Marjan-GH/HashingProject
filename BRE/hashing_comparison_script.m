@@ -1,6 +1,6 @@
 %demo script for running BRE
 
-clear all;
+%clear all;
 
 run_lsh = 1;
 run_bre = 1;
@@ -10,15 +10,15 @@ plotResults = 0;
 colors = 'cbmrg';
 
 %construct hash functions using 1000 sampled "training" points
-trN = 1000;
+trN = 300;
 %3000 queries for testing
-testN = 3000;
+testN = 1000;
 %run the algorithms with varying numbers of bits
 %numbits = [10 15 20 25 30 35 40 45 50];
-numbits = [10 15 20 25 30];
+numbits = [ 10 15 20 25 30];
 
 %X = load('C:\Users\Marjan\Dropbox\Time Series Data\processed-by-dave\wafer-downsampled.mat');
-X=load('labelme.mtx');
+%X=load('labelme.mtx');
 testN = min(testN,size(X,1)-trN);
 
 %center, then normalize data
