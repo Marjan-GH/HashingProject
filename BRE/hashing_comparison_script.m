@@ -10,12 +10,12 @@ plotResults = 0;
 colors = 'cbmrg';
 
 %construct hash functions using 1000 sampled "training" points
-trN = 300;
+trN = 1000;
 %3000 queries for testing
-testN = 1000;
+testN = 2000;
 %run the algorithms with varying numbers of bits
 %numbits = [10 15 20 25 30 35 40 45 50];
-numbits = [ 10 15 20 25 30];
+numbits = [5 10 15 20 25 30 35 40 45 50];
 
 %X = load('C:\Users\Marjan\Dropbox\Time Series Data\processed-by-dave\wafer-downsampled.mat');
 %X=load('labelme.mtx');

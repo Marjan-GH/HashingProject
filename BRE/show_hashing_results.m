@@ -1,8 +1,8 @@
 %simple script to display hashing results
 
-hammd = 4;
+hammd = 3;
 %x = [10 15 20 25 30 35 40 45 50];
-x = [10 15 20 25 30];
+numbits = [5 10 15 20 25 30 35 40 45 50];
 
 ms = 5;
 lw = 3;
